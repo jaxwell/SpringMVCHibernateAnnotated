@@ -13,6 +13,11 @@
         <hibernate.version>4.3.6.Final</hibernate.version>
         <mysql.version>5.1.31</mysql.version>
         <joda-time.version>2.3</joda-time.version>
+
+        <testng.version>6.9.4</testng.version>
+        <mockito.version>1.10.19</mockito.version>
+        <h2.version>1.4.187</h2.version>
+        <dbunit.version>2.2</dbunit.version>
     </properties>
 
     <dependencies>
@@ -102,6 +107,38 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Testing dependencies -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${springframework.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <version>${mockito.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>${h2.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>dbunit</groupId>
+            <artifactId>dbunit</artifactId>
+            <version>${dbunit.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
